@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Creative Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Weekly Creative Challenge</h1>
+        <p>¡Acepta el reto de esta semana y muestra tu talento! Los proyectos más votados serán destacados al final del mes.</p>
+    </header>
+
+    <section class="challenge-of-week">
+        <h2>Reto de la Semana</h2>
+        <p>Esta semana, crea algo impresionante con código: ¡puede ser un juego, una aplicación web, o lo que tu creatividad dicte!</p>
+        <button onclick="window.location.href = 'submit-project.html';">Participa en el reto</button>
+    </section>
+
+    <section class="projects">
+        <h2>Proyectos en Curso</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto creativo.</p>
+                <button onclick="voteProject(1)">Votar</button>
+                <span id="vote-count-1">0</span> votos
+            </div>
+            <div class="project-item">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto creativo.</p>
+                <button onclick="voteProject(2)">Votar</button>
+                <span id="vote-count-2">0</span> votos
+            </div>
+            <!-- Más proyectos pueden añadirse dinámicamente aquí -->
+        </div>
+    </section>
+    <footer>
+        <p>¡Gracias por participar y ser parte de nuestra comunidad creativa!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
