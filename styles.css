@@ -76,3 +76,8 @@ footer {
     margin-top: 30px;
     font-size: 14px;
 }
+
+.project-item img {
+    height: 10%;
+    width: 15%;
+}
